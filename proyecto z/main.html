@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="content-Type" content="text/html" charset="utf-8" />
+    <title>Tecnologias para captura de audio</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script> //Script Menu
+        posicionarMenu();
+
+        $(window).scroll(function () {
+            posicionarMenu();
+        });
+        function posicionarMenu() {
+            var altura_del_header = $('.header').outerHeight(true);
+            var altura_del_menu = $('.menu').outerHeight(true);
+
+            if ($(window).scrollTop() >= altura_del_header) {
+                $('.menu').addClass('fixed');
+                $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+            } else {
+                $('.menu').removeClass('fixed');
+                $('.wrapper').css('margin-top', '0');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Tecnologias para captura de audio</h1>
+    </div>
+ <div id="container">
+    <div id="animacion"></div>
+        </div>
+        
+
+    <div class="menu"><!--Menu-->
+        <a href="analogico.html">Analogico</a>
+        <a href="digital.html">Digital</a>
+        <a href="php/formulario.php">formulario</a>
+        
+    </div>
+    <div class="wrapper">
+        <article id="cuadro"><!--Texto-->
+            <h2 id="text">Tecnologías de Audio </h2>
+            <p>La mejor manera de comenzar a estudiar el sonido es con su ocurrencia en
+                la naturaleza. Nuestro análisis conducirá a los principios que permiten a
+                la tecnología tanto analógica como digital representar, comunicar y manipular el
+                sonido. También abordaremos la tecnología MIDI que ha revolucionado los procesos
+                de composición, grabación y ejecución.</p>
+
+                <h3>¿Que es el sonido?</h3>
+                <p>El sonido puede describirse como oscilaciones de presión del aire que
+                    estimulan el tímpano, las oscilaciones deben estar dentro de cierto
+                    intervalo de frecuencias y amplitudes. Las mediciones absolutas de frecuencia y
+                    amplitud en el sonido se perciben como tono e intensidad.
+                </p>
+                 <div class="imagen">
+                    <img class="imagenes" src="img/ondas.png" alt="Parrafo" width="360">
+                </div>
+                <h3>Frecuencia y tono</h3>
+                <p>El intervalo auditivo promedio de las personas abarca aproximadamente 20Hz a 17 KHz. Los sonidos por arriba de nuestro intervalo auditivo, los ultrasónicos, no son detectados por el oído humano. La frecuencia y el tono están relacionados, pero difieren en varios aspectos importantes. En primer lugar, la frecuencia es una medición científica que corresponde a una de las características físicas de una forma de onda, en tanto que el tono es la cualidad subjetiva que nuestros cerebros perciben con base en la frecuencia. En segundo lugar, la relación entre la frecuencia y el tono es aproximadamente exponencial. Por último, la frecuencia es una medición absoluta, en tanto que el tono es relativo. Los efectos de la frecuencia y el tono tienen que ver con la segunda ley del movimiento de Newton, es decir, los objetos más grandes producirán una onda de mayor longitud, y por tanto de menor frecuencia y tono. Por ejemplo, las notas producidas por el teclado de un piano tienen un rango de frecuencia de 27 a 3840 Hz, distribuidos en 7 octavas. 
+                <p>
+               
+
+               
+            <br>
+           
+        
+    </div>
+    <footer>
+        <article id="cuadro2">
+
+            <h1>Contactos</h1>
+            <div class="azul">
+                <div><a href="https://twitter.com/" class="socialButton twitter">twitter</a></div>
+                <div><a href="https://facebook.com/" class="socialButton facebook">facebook</a></div>
+            </div>
+
+        <h1>Creditos</h1>
+        <div><div><a href="creditos.html" class="myButton creditos">Autor de la pagina</a></div><br>
+
+            <h1>Paleta de colores</h1>
+            <div id="paleta" ><img class="imagen" src="img/paleta.png" alt=""></div>
+
+        <h1>Referencias</h1>
+        <div><h3>http://atc2.aut.uah.es/~juani/documentos/tema4.pdf</h3></div>
+        </article>
+
+        
+        
+    </footer>
+
+
+
+</body>
+</html>

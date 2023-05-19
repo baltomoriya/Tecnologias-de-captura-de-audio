@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="creditos.css">
+    <meta http-equiv="content-Type" content="text/html" charset="utf-8" />
+    <title>Tecnologias para captura de audio</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script> //Script Menu
+        posicionarMenu();
+
+        $(window).scroll(function () {
+            posicionarMenu();
+        });
+        function posicionarMenu() {
+            var altura_del_header = $('.header').outerHeight(true);
+            var altura_del_menu = $('.menu').outerHeight(true);
+
+            if ($(window).scrollTop() >= altura_del_header) {
+                $('.menu').addClass('fixed');
+                $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+            } else {
+                $('.menu').removeClass('fixed');
+                $('.wrapper').css('margin-top', '0');
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="menu"><!--Menu-->
+    <a href="main.html">Introducci&oacute;n</a>
+    <a href="analogico.css">Analogico</a>
+    <a href="digital.css">Digital</a>
+    <a href="php/formulario.php">formulario</a>
+    
+</div>
+
+    <div class="header">
+        <h1>Tecnologias para captura de audio</h1>
+    </div>
+
+    <aside id="left">
+        <img src="img/Escudo.png">
+        <img src="img/uacj.png">
+       </aside>
+       <aside id="right">
+           <img src="img/iada.png">
+               </aside>
+       <main>
+           <img src="img/cara.png">
+           <h1>JUAN MANUEL BALTAZAR AGUIRRE</h1>
+       
+           <h2>Proyecto final: Teconologias para captura de audio</h2>
+           <img src="img/qrcode.png">
+           <h3>CICLO ENERO-JUNIO 2023</h3>
+       </main>
+       
+       
+</body>
+</html>

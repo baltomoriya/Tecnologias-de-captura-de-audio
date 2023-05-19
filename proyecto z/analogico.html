@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="content-Type" content="text/html" charset="utf-8" />
+    <title>Tecnologias para captura de audio</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script> //Script Menu
+        posicionarMenu();
+
+        $(window).scroll(function () {
+            posicionarMenu();
+        });
+        function posicionarMenu() {
+            var altura_del_header = $('.header').outerHeight(true);
+            var altura_del_menu = $('.menu').outerHeight(true);
+
+            if ($(window).scrollTop() >= altura_del_header) {
+                $('.menu').addClass('fixed');
+                $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+            } else {
+                $('.menu').removeClass('fixed');
+                $('.wrapper').css('margin-top', '0');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Tecnologias para captura de audio</h1>
+    </div>
+ <div id="container">
+    <div id="animacion"></div>
+        </div>
+        
+
+    <div class="menu"><!--Menu-->
+        <a href="main.html">Introducci&oacute;n</a>
+        <a href="digital.html">Digital</a>
+        <a href="php/formulario.php">formulario</a>
+        
+    </div>
+    <div class="wrapper">
+        <article id="cuadro"><!--Texto-->
+            <h2 id="text">Audio Analogico </h2>
+            <p>Hasta el siglo XIX, el sonido sólo se podía manipular físicamente. Al crecer
+                los centros de población, aumentó también el tamaño de las salas para
+                escuchar, y se añadieron más instrumentos para aumentar el volumen. A finales del
+                siglo pasado, muchos inventores trabajaban en la conversión del sonido acústico en
+                sonido eléctrico. Uno de sus objetivos era amplificar el sonido más allá de lo que era
+                posible con la pura manipulación acústica.
+                Las ondas sonoras que emanan de voces, instrumentos u otras fuentes
+                naturales se traducen a corriente eléctrica mediante un micrófono. Una vez en forma
+                eléctrica, el sonido se puede manipular, combinar selectivamente con otros sonidos, y
+                almacenar para recuperarlo posteriormente. También podemos crear sonidos
+                completos en el escenario electrónico. Por último, las ondas eléctricas se traducen, otra
+                vez, a ondas de presión de sonido mediante un altavoz.</p>
+
+                <h3>Niveles de señal</h3>
+                <p>Utilizamos varios derivados del decibel: dBu, dBm y dBv.
+                    Los micrófonos producen señales sumamente débiles, del orden de 1 milivoltio.
+                    Estas señales de nivel micrófono son susceptibles a las interferencias y el ruido.
+                     El nivel de línea se refiere a dos normas distintas. La mayor parte del equipo
+                    empleado para grabaciones caseras, grabación /amplificación semiprofesional y
+                    producción / presentación de multimedios está estandarizado a 0.316 voltios. El equipo
+                    profesional de grabación está estandarizado a 1.23 voltios en los EE.UU. El primer nivel
+                    toma como referencia -10 dB, y el segundo +4 dB.
+                    Las señales amplificadas que se alimentan a los altavoces tienen un nivel bastante más alto que el de línea.
+                </p>
+                   <div class="imagen">
+                    <img class="imagenes" src="img/analogic.png" alt="Parrafo" width="360">
+                </div>
+
+                <h3>Frecuencia y tono</h3>
+                <p>El intervalo auditivo promedio de las personas abarca aproximadamente 20Hz a 17 KHz. Los sonidos por arriba de nuestro intervalo auditivo, los ultrasónicos, no son detectados por el oído humano. La frecuencia y el tono están relacionados, pero difieren en varios aspectos importantes. En primer lugar, la frecuencia es una medición científica que corresponde a una de las características físicas de una forma de onda, en tanto que el tono es la cualidad subjetiva que nuestros cerebros perciben con base en la frecuencia. En segundo lugar, la relación entre la frecuencia y el tono es aproximadamente exponencial. Por último, la frecuencia es una medición absoluta, en tanto que el tono es relativo. Los efectos de la frecuencia y el tono tienen que ver con la segunda ley del movimiento de Newton, es decir, los objetos más grandes producirán una onda de mayor longitud, y por tanto de menor frecuencia y tono. Por ejemplo, las notas producidas por el teclado de un piano tienen un rango de frecuencia de 27 a 3840 Hz, distribuidos en 7 octavas. 
+                <p>
+             
+
+               
+            <br>
+           
+        
+    </div>
+    <footer>
+        <article id="cuadro2">
+
+            <h1>Contactos</h1>
+            <div class="azul">
+                <div><a href="https://twitter.com/" class="socialButton twitter">twitter</a></div>
+                <div><a href="https://facebook.com/" class="socialButton facebook">facebook</a></div>
+            </div>
+
+        <h1>creditos</h1>
+        <div><div><a href="creditos.html" class="myButton creditos">Autor de la pagina</a></div><br>
+
+            <h1>Paleta de colores</h1>
+            <div id="paleta" ><img class="imagen" src="img/paleta.png" alt=""></div>
+
+        <h1>Referencias</h1>
+        <div><h3>http://atc2.aut.uah.es/~juani/documentos/tema4.pdf</h3></div>
+        </article>
+
+        
+        
+    </footer>
+
+
+
+</body>
+</html>

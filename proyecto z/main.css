@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: Oswald;
+    src: url(php/fuentes/Oswald.ttf);
+}
+@font-face {
+    font-family: alagard;
+    src: url(php/fuentes/alagard.ttf);
+}
+/*experimento*/
+body, html{ 
+    margin: 0; 
+    padding: 0;
+    background-color: rgb(136, 136, 136);
+    min-width: 30vw;
+}
+.header{ 
+    background:rgb(136, 136, 136); 
+    color:rgb(225, 225, 225); 
+    height: 120px; 
+    width: 100%; 
+    text-align:center;
+    padding-top: 20px;
+}
+.menu{ 
+    height:45px; 
+    width:100%; 
+    background:#333; 
+    color:white; 
+    text-align:center;
+    flex: content;
+}
+.menu a{
+    font-family: Oswald;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+.menu a:hover{
+    background-color: #6c686e;
+}
+.wrapper{ 
+    height: auto;
+    width: 80%;
+    background-color: #8fe1e8;
+    margin-left: 10%;
+    padding: 50px;
+}
+.fixed{
+    position:fixed; 
+    top:0
+}
+/*Fin de experimento*/
+/*#cuadro{
+    background-color: rgb(143, 225, 232);
+    
+}*/
+#cuadro{
+    height: auto;
+    width: 100%;
+    background-color: #bce6ea;
+    border-radius: 15px 15px 15px;
+    padding: 40px;
+}
+
+#cuadro2{
+
+    margin-top: 4vh;
+    height: auto;
+    width: 100%;
+    background-color: #6c686e;
+    padding: 40px;
+    width: 80%;
+    margin-left: 10%;
+    font-family: Oswald;
+}
+
+.imagen{
+    position: center;
+    margin: 47px;
+    width: 50vw;
+}
+.imagenes{
+    position: center;
+    width: 30vw;
+}
+#izq{
+text-align: left;
+margin-left: 100px;
+padding-right: 210px;
+display: inline-block;
+}
+#der{
+text-align: right;
+margin-right: 10px;
+display: inline-block;
+}
+
+
+/*--------------------carrusel slider---------------------------------------------------------------------------*/
+#container{
+    background-color: #000;
+
+    width: 100vw; 
+   
+}
+
+footer{display: flex;
+    align-items: center;
+    position: center   ;
+    text-align: center  ;
+    font-size: 2vw;
+     font-family: alagard;
+
+}
+/*--------------------botones-----------------------------------------------------------------------------*/
+
+.azul{display: inline-flex;
+
+position: center   ;
+text-align: center  ;
+ }
+
+.twitter {
+    margin-right: 5vw;
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+	&:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+ &:active {
+	position:relative;
+	top:1px;
+}
+ }
+
+ .facebook {
+     box-shadow:inset 0px 1px 0px 0px #71a6e2;
+     background:linear-gradient(to bottom, #032dc4 5%, #0921a8 100%);
+     background-color:#034dc4;
+     border-radius:6px;
+     border:1px solid #073cb8;
+     display:inline-block;
+     cursor:pointer;
+     color:#ffffff;
+     font-family:Arial;
+     font-size:15px;
+     font-weight:bold;
+     padding:6px 24px;
+     text-decoration:none;
+     text-shadow:0px 1px 0px #092580;
+     &:hover {
+     background:linear-gradient(to bottom, #0931a8 5%, #0313c4 100%);
+     background-color:#1909a8;
+ }
+  &:active {
+     position:relative;
+     top:1px;
+ }
+  }
+
+
+  .myButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#animacion{
+    
+    background-color:rgb(20, 0, 196);
+    width:1200px;
+    height: 350px;
+    background-image: url(https://213195baltazar.000webhostapp.com/final%20cuarto%20semestre/img/audio.png);
+    background-size: 160% 100%;
+    animation: slider 5s infinite linear;
+    border-radius: 20px 20px 20px;
+    margin:auto;
+}
+@keyframes slider{
+    to{background-position: 600px;}}

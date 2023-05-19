@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="content-Type" content="text/html" charset="utf-8" />
+    <title>Tecnologias para captura de audio</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script> //Script Menu
+        posicionarMenu();
+
+        $(window).scroll(function () {
+            posicionarMenu();
+        });
+        function posicionarMenu() {
+            var altura_del_header = $('.header').outerHeight(true);
+            var altura_del_menu = $('.menu').outerHeight(true);
+
+            if ($(window).scrollTop() >= altura_del_header) {
+                $('.menu').addClass('fixed');
+                $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+            } else {
+                $('.menu').removeClass('fixed');
+                $('.wrapper').css('margin-top', '0');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Tecnologias para captura de audio</h1>
+    </div>
+ <div id="container">
+    <div id="animacion"></div>
+        </div>
+        
+
+    <div class="menu"><!--Menu-->
+    <a href="main.html">Introducci&oacute;n</a>
+        <a href="analogico.html">Analogico</a>
+        <a href="php/formulario.php">formulario</a>
+        
+    </div>
+    <div class="wrapper">
+        <article id="cuadro"><!--Texto-->
+                <h1>Audio Digital</h1>
+                <p>El sonido analógico se transforma en representaciones numéricas mediante
+convertidores analógico a digital. Una vez en forma digital, la información
+se puede manipular, almacenar, transmitir y copiar sin que haya degradación.</p>
+<h3>Tasas de muestreo y definición</h3>
+<p>No todo el audio digital se crea igual. El número de bits de definición
+determina el intervalo dinámico, pues cada bit contribuye 6 dB a dicho intervalo.
+El proceso de cuantización empleado para digitalizar el audio produce a veces
+efectos extraños conocidos como ruido de cuantización.
+La tasa de muestreo determina la respuesta de frecuencia de la grabación de
+acuerdo con el teorema de Nyquist. El aliasing que aparece cuando se intenta grabar
+frecuencias que exceden la mitad de la tasa de muestreo se manifiesta como ruido
+anómalo en la grabación. Los filtros paso bajo hacen que la respuesta de frecuencia
+efectiva sea un poco menos que la mitad de la tasa de muestreo; 
+Hay otros dos factores básicos que también determinan la calidad del audio
+digital. En primer lugar, la calidad de los circuitos y componentes empleados en los
+CAD y CDA es independiente de las especificaciones de definición y tasa de
+muestreo. En segundo lugar, se aplican los principios del eslabón más débil y GIGO.
+Protocolo de audio digital
+Hay ocasiones en que es necesario transferir información de audio digital en
+tiempo real entre dos dispositivos. Los protocolos de comunicación más comunes en
+multimedios de escritorio son AES/EBU, SDIF-2 y S/PDIF.
+AES/EBU fue desarrollado de manera conjunta por la Audio Engineering
+Society y la European Broadcast Union, y la utiliza la mayoría de los sistemas
+profesionales de audio digital. Es una interfaz RS-422 de dos canales que utiliza
+líneas balanceadas y conectores XLR o D-sub. SDIF-2 (formato de interfaz digital
+Sony) se encuentra en dispositivos de grabación PCM basados en videocinta; utiliza
+líneas balanceadas de 75 ohms con conectores BNC.
+S/PDIF (formato de interfaz digital Sony/Phillips) fue desarrollado de manera
+conjunta por Sony y Phillips. En esencia, es una versión no balanceada del protocolo
+AES/EBU y utiliza conexiones RCA o de fibras ópticas. Este protocolo se utiliza en
+grabadoras de DAT, reproductoras de CD y codificadores F1 con interfaces digitales.</p>
+  <div class="imagen">
+                    <img class="imagenes" src="img/midi.png" alt="Parrafo" width="360">
+                </div>
+<h3>LA REVOLUCIÓN MIDI</h3>
+<p>Hasta 1983, la mayoría de los instrumentos musicales electrónicos
+avanzados sólo podían comunicarse con productos del mismo fabricante.
+La inclusión de un microprocesador en los instrumentos preparó el camino para MIDI
+(interfaz digital de instrumento musical), un protocolo de comunicación en serie
+diseñado específicamente para los dispositivos de música electrónica. MIDI revolucionó
+la industria de la grabación prácticamente de la noche a la mañana al hacer posible un
+control central sobre muchos instrumentos.</p>
+<h3>Panorama general de MIDI</h3>
+<p>MIDI contiene instrucciones que controlan cómo y cuando los dispositivos
+(como los sintetizadores digitales) producen sonido.
+La conexión de la salida MIDI de un instrumento (el maestro) a la entrada MIDI
+de otro (un esclavo) permite al ejecutante controlar el esclavo desde el maestro.
+La potencia de MIDI radica en su capacidad para enviar y recibir información de
+ejecución en cualquiera de 16 canales distintos y separados. Aunque es posible que el
+conducto MIDI lleve muchos canales de datos de ejecución al mismo tiempo, un
+esclavo ajustado para recibir el canal 1 sólo responderá a la información que tenga el
+identificador de ese canal.</p>
+              
+
+               
+            <br>
+           
+        
+    </div>
+    <footer>
+        <article id="cuadro2">
+
+            <h1>Contactos</h1>
+            <div class="azul">
+                <div><a href="https://twitter.com/" class="socialButton twitter">twitter</a></div>
+                <div><a href="https://facebook.com/" class="socialButton facebook">facebook</a></div>
+            </div>
+
+        <h1>Creditos</h1>
+        <div><div><a href="creditos.html" class="myButton creditos">Autor de la pagina</a></div><br>
+
+            <h1>Paleta de colores</h1>
+            <div id="paleta" ><img class="imagen" src="img/paleta.png" alt=""></div>
+
+        <h1>Referencias</h1>
+        <div><h3>http://atc2.aut.uah.es/~juani/documentos/tema4.pdf</h3></div>
+        </article>
+
+        
+        
+    </footer>
+
+
+
+</body>
+</html>
